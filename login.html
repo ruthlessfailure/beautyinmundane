@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html< lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,12 @@
     <script src="https://kit.fontawesome.com/d8d1b2aa1e.js" crossorigin="anonymous"></script>
     <!-- Custom Styling -->
     <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fleur+De+Leah&family=Gwendolyn:wght@400;700&family=Ingrid+Darling&family=Neonderthaw&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Rock+3D&family=Rubik+Glitch+Pop&family=Rubik+Microbe&family=Rubik+Puddles&display=swap" rel="stylesheet">
  
-<title>Single Post</title>
 </head>
 <style>
 *{
@@ -44,8 +44,9 @@ h2, h4 {
     color: #444;
     margin: 5px;
 }
+
 h3 {
- font-family:  "Noticia Text", serif;
+ font-family: "Noticia Text", serif;
   font-weight: 700;
   font-style: normal;
   color: #444;
@@ -59,8 +60,7 @@ h5 {
   font-style: normal;
      color: #444;
     margin: 5px;
-    font-size: 1.7rem;
- }
+}
 
 h6{
  font-family: "Rubik Glitch Pop", serif;
@@ -86,7 +86,7 @@ background: #6ABAC8;
 color: antiquewhite;
 border: 1px solid transparent;
 border-radius: .25rem;
-
+font-size: .7em;
 }
 
 .btn-big {
@@ -278,108 +278,136 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 /* CONTENT */
-.content {
-    width: 90%;
-    margin: 30px auto;
-    display: flex;
-    gap: 30px;
+
+.content{
+width: 90%;
+margin: 30px auto 30px;
 }
 
-/* Main Content */
-.content .main-content.single {
-    flex: 1;
-    background: #FFD6EE;
-    padding: 20px 50px;
-    font-size: 1.1em;
-    border-radius: 5px;
-}
-
-.content .main-content .post-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Post styling */
-.content .main-content .post {
-    width: 95%;
-    height: 270px;
-    margin: 20px auto;
-    border-radius: 5px;
-    background: #FFD6EE;
-    position: relative;
-}
-
-.content .popular .post {
-    border-top: 1px solid #9DCED2;
-    margin-top: 10px;
-    padding-top: 10px;
-}
-
-.content .popular .post img {
-height: 60px;
-width: 75px;
+.content .main-content{
+width: 70%;
 float: left;
-margin-right: 10px;
+}
 
+
+.content .main-content .post {
+width: 95%;
+height: 270px;
+margin: 20px auto;
+border-radius: 5px;
+background: #FFD6EE;
+position: relative;
 }
 
 .content .main-content .post .read-more {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    border: 1px solid #9DCED2;
-    background: transparent;
-    color: #6ABAC8;
+position: absolute;
+bottom: 10px;
+right: 10px;
+border: 1px solid #9DCED2;
+background: transparent;
+color: #6ABAC8 !important;
 }
 
+.content .main-content .post .read-more:hover {
+background: #9BBED6 ;
+color: #2E8A9E !important;
+transition: .25s;
+}
+
+
 .content .main-content .post .post-image {
-    width: 40%;
-    height: 100%;
-    float: left;
+width: 40%;
+height: 100%;
+float: left;
+
 }
 
 .content .main-content .post .post-preview {
-    width: 60%;
-    padding: 10px;
-    float: right;
+width: 60%;
+padding: 10px;
+float: right;
+
 }
 
-/* Sidebar */
-.content .sidebar.single {
-    width: 300px;
-    background: #F1BEDD;
-    padding: 20px;
-    border-radius: 5px;
+
+
+.content .main-content .post span{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content .main-content .recent-post-title{
+margin: 20px;
+}
+
+.content .sidebar {
+width: 30%;
+float: left;
+height: 300px;
+
 }
 
 .content .sidebar .section {
-    background: #FFD6EE;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+background: #FFD6EE;
+padding: 20px;
+border-radius: 5px;
+margin-bottom: 20px;
+
 }
 
 .content .sidebar .section .section-title {
-    margin: 10px 0px 10px 0px;
+margin: 10px 0px 10px 0px;
+}
+
+.content .sidebar .section.search {
+margin-top: 67px;
+
+
 }
 
 .content .sidebar .section.topics ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+margin: 0px;
+padding: 0px;
+list-style: none;
 }
 
 .content .sidebar .section.topics ul li a {
-    border-bottom: 1px solid #9DCED2;
-    display: block;
-    padding: 15px 0px 15px 0px;
-    transition: all 0.3s;
+border-bottom: 1px solid #9DCED2;
+display: block;
+padding: 15px 0px 15px 0px;
+transition: all 0.3s;
 }
 
 .content .sidebar .section.topics ul li a:hover {
-    padding-left: 10px;
-    transition: all 0.3s;
+padding-left: 10px;
+transition: all 0.3s;
+
 }
+/* AUTH PAGES */
+
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background:#FFD6EE;
+    border-radius: 5px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+
+}
+.auth-content form p {
+    text-align: center;
+}
+.auth-content form p a {
+    text-decoration: underline;
+}
+
+
 
 
 
@@ -390,9 +418,6 @@ background: #2E8A9E;
 color: white;
 height: 400px;
 position: relative;
-bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 .footer .footer-content {
@@ -539,7 +564,6 @@ header .logo {
 
 }
 </style>
-
 <body>
   <header>
       <div class="logo">
@@ -572,198 +596,24 @@ header .logo {
           </li>
       </ul>
   </header>
-
-<!-- Page Wrapper -->
-
-  <div class="page-wrapper">
-
-    <!-- Content -->
-    <div class="content clearfix">
-    
-       <!-- Main Content -->
-    <div class="main-content single">
-     <h2 class="post-title"> Female Resistance is a Legacy for Women</h2>
-     <div class="post-content">
-     <p>Hannah Höch (1889–1978) was a German artist and a key figure in the Dada movement. She is known for her use of photomontage and collage techniques to create works that address issues such as gender, identity, cultural criticism, and the dynamics of modern society. Embracing the anarchistic and anti-normative perspective of Dada, Höch created powerful visuals that questioned female identity and societal gender roles, becoming one of the pioneers of feminist art.</p>
-
-     <p>In Hannah Höch's "Around a Red Mouth", 1967 the color red carries multi-layered meanings that contribute to the thematic depth of the piece. The red mouth figure presents a strong symbol of female identity and sexuality; the red color evokes passion, desire, and allure while also questioning how sexuality is shaped by societal and cultural norms. The red mouth in the artwork also symbolizes the struggle for women to assert their voice and fight for freedom of expression. Red, often associated with power and aggression, emphasizes a woman’s resistance to societal pressures and her desire to form her own identity. Additionally, red can signify danger and warning, reflecting the threats imposed on women’s identities by society and the internal conflicts arising from these pressures. Through her use of red, Höch communicates women’s resistance to societal roles, their pursuit of freedom, and the suppressed aspects of their identities with a powerful visual expression.</p>
-
-     </div>
+  <div class="auth-content">
+<form action="login.html" method="post">
+    <h1 class="form-title">Login</h1>
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" class="text-input">
     </div>
-       
-       <!-- // Main Content -->
-
-       <!-- Sidebar -->
-    <div class="sidebar single">
- 
-        <div class="section popular">  
-            <h1 class="section-title">Popular</h1>
-            <div class="post clearfix">
-                <img src="cat.png" alt="" srcset="">
-                <a href="" class="title">"sometimes things have to fall apart to make way for better things"
-                </a>
-            </div>
-            <div class="post clearfix">
-                <img src="dog.png" alt="" srcset="">
-                <a href="" class="title">"belirli bir sarhoşluk içinde yeryüzüne dayanmak daha kolay"
-                </a>
-            </div>
-            <div class="post clearfix">
-                <img src="bed.png" alt="" srcset="">
-                <a href="" class="title">Sleepover Ideas That Will Never Let You Resort to Your Phone
-                </a>
-            </div>
-            <div class="post clearfix">
-                <img src="sexism.png" alt="" srcset="">
-                <a href="" class="title">Fighting Sexism Together: Both Genders Should Be Equal
-                </a>
-            </div>
-            <div class="post clearfix">
-                <img src="women.png" alt="" srcset="">
-                <a href="" class="title">The Trend of The Year! Some Nightdress Recommendations
-                </a>
-            </div>
-        </div>
-
-    <div class="section topics">
-    <h1 class="section-title">Topics</h1>
-    <ul>
-         <li><a href="#">Poems</a></li>
-         <li><a href="#">Literature</a></li>
-         <li><a href="#">Writing</a></li>
-         <li><a href="#">Quotes</a></li>
-         <li><a href="#">Fun Facts</a></li>
-         <li><a href="#">Ideas</a></li>
-         <li><a href="#">Recommendations</a></li>
-         <li><a href="#">Lifestyle</a></li>
-         </ul>
+    <div>
+        <label>Password</label>
+        <input type="text" name="password" class="text-input">
     </div>
-    
-    
-    
-    
+    <div>
+        <button type="submit" name="login-btn" class="btn"><h2>Log In</h2></button>
     </div>
-    <!-- // Sidebar -->
-    </div>
-    <!-- // Content -->
-
-
+    <p>or <a href="signup.html">Sign Up</a></p>
+</form>
   </div>
-<!-- // Page Wrapper -->
-
-<!-- footer -->
-<div class="footer">
-    <div class="footer-content">
-          <div class="footer-section about">
-    <h1 class="logo-text"><span>Beauty in Mundane</span></h1>
-          <p>
-    Beauty in Mundane is a page where we help each other take some time away from all the exaggerations of our daily life and start seeing the hidden beauty in everyday life. 
-    Whether it's a quiet street, a blooming flower, a stunning sunset or just your favorite book, this site serves as a collective space for capturing the essence of daily beauty.
-         </p>
-                <div class"socials">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                </div>
-          </div>
-          <div class="footer-section links">
-    <h6>Quick Links</h6>
-    <br>
-    <ul>
-      <a href="#"> 
-         <li>Events</li>
-      </a>
-      <a href="#">
-         <li>Team</li>
-      </a>
-      <a href="#">
-         <li>Donate</li>
-      </a>
-      <a href="#">
-         <li>Terms of Use</li>
-      </a>  
-      <a href="#">
-         <li>Privacy Policy</li>
-      </a>   
-      
-      
-      </ul>
-          </div>
-          <div class="footer-section contact-form">
-    <h6>Contact Us</h6>
-    <br>
-    <form action="index.html" method="post">
-      <input type="email" name="email" class="text-input contact-input" placeholder="Your email adress...">
-      <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-      <button type="submit" class="btn btn-big contact-btn">
-      <i class="fas fa-envelope"></i>
-      <span>Send</span></button>
-    </form>
-          </div>
-    </div>
-    <div class="footer-bottom">
-    &copy; beautyinmundane.com | Designed by rue
-    
-    </div>
-</div>
-
-<!-- // footer -->
 
 
-  <!-- JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Slick Carousel -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-				
- <!-- Custom Script -->
- <script src="js/script.js"></script>
- <script>
-$(document).ready(function(){
-$('.menu-toggle').on('click', function() {
-    $('.nav').toggleClass('showing')
-    $('.nav ul').toggleClass('showing')
-});
-
-
-$('.post-wrapper').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    nextArrow: $('.next'),
-    prevArrow: $('.prev'),
-    responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-  });
-
-
-});
-  </script>
- </body>
- </html>
+  </body>
+</html>
