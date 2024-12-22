@@ -310,6 +310,20 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     position: relative;
 }
 
+.content .popular .post {
+    border-top: 1px solid #9DCED2;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.content .popular .post img {
+height: 60px;
+width: 75px;
+float: left;
+margin-right: 10px;
+
+}
+
 .content .main-content .post .read-more {
     position: absolute;
     bottom: 10px;
@@ -565,7 +579,7 @@ header .logo {
   <div class="page-wrapper">
 
     <!-- Content -->
-    <div class="content ">
+    <div class="content clearfix">
     
        <!-- Main Content -->
     <div class="main-content single">
@@ -583,9 +597,37 @@ header .logo {
        <!-- Sidebar -->
     <div class="sidebar single">
  
-         
+        <div class="section popular">  
+            <h1 class="section-title">Popular</h1>
+            <div class="post clearfix">
+                <img src="cat.png" alt="" srcset="">
+                <a href="" class="title">"sometimes things have to fall apart to make way for better things"
+                </a>
+            </div>
+            <div class="post clearfix">
+                <img src="dog.png" alt="" srcset="">
+                <a href="" class="title">"belirli bir sarhoşluk içinde yeryüzüne dayanmak daha kolay"
+                </a>
+            </div>
+            <div class="post clearfix">
+                <img src="bed.png" alt="" srcset="">
+                <a href="" class="title">Sleepover Ideas That Will Never Let You Resort to Your Phone
+                </a>
+            </div>
+            <div class="post clearfix">
+                <img src="sexism.png" alt="" srcset="">
+                <a href="" class="title">Fighting Sexism Together: Both Genders Should Be Equal
+                </a>
+            </div>
+            <div class="post clearfix">
+                <img src="women.png" alt="" srcset="">
+                <a href="" class="title">The Trend of The Year! Some Nightdress Recommendations
+                </a>
+            </div>
+        </div>
+
     <div class="section topics">
-    <h2 class="section-title">Topics</h2>
+    <h1 class="section-title">Topics</h1>
     <ul>
          <li><a href="#">Poems</a></li>
          <li><a href="#">Literature</a></li>
