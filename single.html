@@ -279,133 +279,96 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 /* CONTENT */
-
-.content{
-width: 90%;
-margin: 30px auto 30px;
+.content {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
 }
 
-.content .main-content{
-width: 70%;
-float: left !important;
-}
-
+/* Main Content */
 .content .main-content.single {
-
-    background:#FFD6EE;
+    flex: 1;
+    background: #FFD6EE;
     padding: 20px 50px;
     font-size: 1.1em;
     border-radius: 5px;
-
 }
-.content .main-content.single .post-title {
 
+.content .main-content .post-title {
     text-align: center;
     margin-bottom: 40px;
 }
 
+/* Post styling */
 .content .main-content .post {
-width: 95%;
-height: 270px;
-margin: 20px auto;
-border-radius: 5px;
-background: #FFD6EE;
-position: relative;
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: #FFD6EE;
+    position: relative;
 }
 
 .content .main-content .post .read-more {
-position: absolute;
-bottom: 10px;
-right: 10px;
-border: 1px solid #9DCED2;
-background: transparent;
-color: #6ABAC8 !important;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #9DCED2;
+    background: transparent;
+    color: #6ABAC8;
 }
-
-.content .main-content .post .read-more:hover {
-background: #9BBED6 ;
-color: #2E8A9E !important;
-transition: .25s;
-}
-
 
 .content .main-content .post .post-image {
-width: 40%;
-height: 100%;
-float: left;
-
+    width: 40%;
+    height: 100%;
+    float: left;
 }
 
 .content .main-content .post .post-preview {
-width: 60%;
-padding: 10px;
-float: right;
-
+    width: 60%;
+    padding: 10px;
+    float: right;
 }
 
-
-
-.content .main-content .post span{
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.content .main-content .recent-post-title{
-margin: 20px;
-}
-
-.content .sidebar {
-width: 30%;
-float: left !important;
-height: 300px;
-background: #FFD6EE;
-}
-
+/* Sidebar */
 .content .sidebar.single {
-
-padding: 0px 10px;
-background: #FFD6EE;
-float: right !important;
-
+    width: 300px;
+    background: #F1BEDD;
+    padding: 20px;
+    border-radius: 5px;
 }
-
-
 
 .content .sidebar .section {
-background: #FFD6EE;
-padding: 20px;
-border-radius: 5px;
-margin-bottom: 20px;
-
+    background: #FFD6EE;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .content .sidebar .section .section-title {
-margin: 10px 0px 10px 0px;
-}
-
-.content .sidebar .section.search {
-margin-top: 67px;
-
-
+    margin: 10px 0px 10px 0px;
 }
 
 .content .sidebar .section.topics ul {
-margin: 0px;
-padding: 0px;
-list-style: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
 .content .sidebar .section.topics ul li a {
-border-bottom: 1px solid #9DCED2 ;
-display: block;
-padding: 15px 0px 15px 0px;
-transition: all 0.3s;
+    border-bottom: 1px solid #9DCED2;
+    display: block;
+    padding: 15px 0px 15px 0px;
+    transition: all 0.3s;
 }
 
 .content .sidebar .section.topics ul li a:hover {
-padding-left: 10px;
-transition: all 0.3s;
-
+    padding-left: 10px;
+    transition: all 0.3s;
 }
+
+
 
 /* FOOTER */
 
@@ -602,11 +565,11 @@ header .logo {
   <div class="page-wrapper">
 
     <!-- Content -->
-    <div class="content clearfix">
+    <div class="content ">
     
        <!-- Main Content -->
-    </div class="main-content single">
-     <h3> Female Resistance is a Legacy for Women</h3>
+    <div class="main-content single">
+     <h2 class="post-title"> Female Resistance is a Legacy for Women</h2>
      <div class="post-content">
      <p>Hannah Höch (1889–1978) was a German artist and a key figure in the Dada movement. She is known for her use of photomontage and collage techniques to create works that address issues such as gender, identity, cultural criticism, and the dynamics of modern society. Embracing the anarchistic and anti-normative perspective of Dada, Höch created powerful visuals that questioned female identity and societal gender roles, becoming one of the pioneers of feminist art.</p>
 
