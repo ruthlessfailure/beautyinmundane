@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d8d1b2aa1e.js" crossorigin="anonymous"></script>
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Beauty in Mundane</title>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fleur+De+Leah&family=Gwendolyn:wght@400;700&family=Ingrid+Darling&family=Neonderthaw&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Rock+3D&family=Rubik+Glitch+Pop&family=Rubik+Microbe&family=Rubik+Puddles&display=swap" rel="stylesheet">
+ 
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #E3A6CB;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+      
+}
+h1 {
+   font-family: "Rubik Puddles", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h2, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444;
+    margin: 5px;
+}
+
+h3 {
+ font-family: "Noticia Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #444;
+    margin: 5px;
+    font-size: 1.7rem;
+}
+
+h5 {
+  font-family: "Rock 3D", serif;
+  font-weight: 400;
+  font-style: normal;
+     color: #444;
+    margin: 5px;
+}
+
+h6{
+ font-family: "Rubik Glitch Pop", serif;
+ color: #444;
+    margin: 5px;
+    font-size: 1.7rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after {
+content: '';
+display: block;
+clear: both;
+}
+
+.btn {
+padding: .5rem 1rem;
+background: #6ABAC8;
+color: antiquewhite;
+border: 1px solid transparent;
+border-radius: .25rem;
+
+}
+
+.btn-big {
+
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+
+}
+
+.btn:hover {
+color: antiquewhite !important;
+background: #20606F;
+
+}
+
+.text-input {
+padding: .5rem 1rem;
+display: block;
+width: 100%;
+border-radius: 5px;
+border: 1px solid pink;
+outline: none;
+color: #444;
+line-height: 1.5rem;
+font-size: 1em;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* NAVBAR */
+
+header {
+    background-color: #45062E;
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text{
+    margin: 9px;
+}
+
+header .logo-text span {
+    color: antiquewhite;
+  font-family: "Rubik Puddles", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    color: #444;
+    background: #F1BEDD;
+}
+
+header ul li ul li a.logout{
+    color: red;
+}
+
+
+header ul li ul li a:hover {
+    background:  #94567d;
+}
+
+header ul li a {
+display: block;
+padding: 21px;
+font-size: 1.0em;
+text-decoration: none;
+}
+
+header ul li a:hover{
+    background: #94567d;
+    transition: 0.5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+.post-wrapper {
+        min-height: 100%;
+}
+.page-wrapper a:hover {
+    color: #9BBED6;
+}
+
+/* POST SLIDER */
+.post-slider {
+    position: relative;
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+
+}
+
+.post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #444;
+    cursor: pointer;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #444;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+    width: 84%;
+    overflow: hidden;
+    height: 350px;
+    margin: 0px auto;
+    padding: 10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post {
+    height: 330px;
+    margin: 0px 10px;
+    width: 300px;
+    display: inline-block;
+    background: #FFD6EE;
+    border-radius: 5px;
+    box-shadow: lrem lrem lrem -lrem #a0a0a033;
+    position: relative;
+
+}
+.post-slider .post-wrapper .post span{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.post-slider .post-wrapper .post .post-info {
+    height: 130px;
+    padding: 0px 5px;
+    position: absolute;
+}
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover; /* Ensures the image fits without distortion */
+}
+
+
+
+
+/* CONTENT */
+
+.content{
+width: 90%;
+margin: 30px auto 30px;
+}
+
+.content .main-content{
+width: 70%;
+float: left;
+}
+
+
+.content .main-content .post {
+width: 95%;
+height: 270px;
+margin: 20px auto;
+border-radius: 5px;
+background: #FFD6EE;
+position: relative;
+}
+
+.content .main-content .post .read-more {
+position: absolute;
+bottom: 10px;
+right: 10px;
+border: 1px solid #9DCED2;
+background: transparent;
+color: #6ABAC8 !important;
+}
+
+.content .main-content .post .read-more:hover {
+background: #9BBED6 ;
+color: #2E8A9E !important;
+transition: .25s;
+}
+
+
+.content .main-content .post .post-image {
+width: 40%;
+height: 100%;
+float: left;
+
+}
+
+.content .main-content .post .post-preview {
+width: 60%;
+padding: 10px;
+float: right;
+
+}
+
+
+
+.content .main-content .post span{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content .main-content .recent-post-title{
+margin: 20px;
+}
+
+.content .sidebar {
+width: 30%;
+float: left;
+height: 300px;
+
+}
+
+.content .sidebar .section {
+background: #FFD6EE;
+padding: 20px;
+border-radius: 5px;
+margin-bottom: 20px;
+
+}
+
+.content .sidebar .section .section-title {
+margin: 10px 0px 10px 0px;
+}
+
+.content .sidebar .section.search {
+margin-top: 67px;
+
+
+}
+
+.content .sidebar .section.topics ul {
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+.content .sidebar .section.topics ul li a {
+border-bottom: 1px solid #9DCED2;
+display: block;
+padding: 15px 0px 15px 0px;
+transition: all 0.3s;
+}
+
+.content .sidebar .section.topics ul li a:hover {
+padding-left: 10px;
+transition: all 0.3s;
+
+}
+
+/* FOOTER */
+
+.footer {
+background: #2E8A9E;
+color: white;
+height: 400px;
+position: relative;
+}
+
+.footer .footer-content {
+height: 350px;
+display: flex;
+}
+
+.footer .footer-content .footer-section {
+flex: 1;
+padding: 25px;
+}
+
+.footer .footer-content h6,
+.footer .footer-content h2 {
+color: white;
+}
+
+.footer .footer-content .about h1 span {
+color: antiquewhite;
+}
+.footer .footer-content .about .contact span {
+
+display:block;
+font-size: 1.1em;
+margin-bottom: 8px;
+
+}
+
+.footer .footer-content .about .socials a {
+border: 1px solid gray;
+width: 45px;
+height: 41px;
+padding-top: 5px;
+margin-right: 5px;
+text-align: center;
+display: inline-block;
+font-size: 1.3em;
+border-radius: 5px;
+}
+.footer .footer-content .about .socials a:hover {
+
+border: 1px solid #9BBED6;
+color: white;
+transition: all .3s;
+
+}
+
+.footer .footer-content .links ul a {
+
+display: block;
+margin-bottom: 10px;
+font-size: 1.2em;
+
+}
+
+.footer .footer-content .links ul a:hover {
+
+color: #9BBED6 ;
+margin-left: 15px;
+transition: all .3s;
+
+}
+
+.footer .footer-content .contact-form .contact-input {
+
+background: #9DCED2;
+color: #444;
+margin-bottom: 10px;
+line-height: 1.5rem;
+padding: .9rem 1.4rem;
+border: none;
+
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+
+background: #6ABAC8;
+
+}
+
+.footer .footer-content .contact-form .contact-btn {
+    
+float: right;
+font-size: 1.1em;
+font-family:Georgia, 'Times New Roman', Times, serif ;
+
+ }
+
+.footer .footer-bottom {
+background: #20606F;
+color: #9BBED6;
+text-align: center;
+height: 50px;
+position: absolute;
+bottom: 0px;
+left: 0px;
+padding-top: 15px;
+width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
+header{
+position: relative;
+}
+   header ul {
+      width: 100%;
+      background: #F1BEDD;
+      max-height: 0px;
+      overflow: hidden;
+     }
+.showing{
+    max-height: 100em;
+}
+header ul li {
+width: 100%;
+}
+header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+    
+     }
+header ul li ul li a {
+    padding: 10px;
+    color: #444;
+    background: #FFD6EE;
+    padding-left: 50px;
+}
+header ul li ul li a.logout{
+    color: red;
+}
+header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.9em;
+}
+header .logo {
+        margin-left: .5em;
+        
+}
+
+}
+</style>
+<body>
+  <header>
+      <div class="logo">
+          <h1 class="logo-text"><span>Beauty in Mundane</span></h1>
+      </div>
+      <i class="fa-regular fa-square-minus menu-toggle"></i>
+      <ul class="nav"> <!-- Corrected placement of class attribute -->
+          <li>
+          <a href="#">Home</a>
+           <ul style="left: 0px">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Team</a></li>
+              </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <!-- <li><a href="#">sign up</a></li>
+          <li><a href="#">login</a></li> -->
+          <li>
+              <a href="#">
+                  <i class="fa fa-user"></i>
+                  nes
+              <i class="fa fa-chevron-down" style="font-size: .8em;" ></i>
+      
+              </a>
+              <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#" class="logout">Logout</a></li>
+              </ul>
+          </li>
+      </ul>
+  </header>
+
+<!-- Page Wrapper -->
+
+  <div class="page-wrapper">
+
+
+    <!-- Post Slider -->
+<div class="post-slider">
+    <h1 class="slider-title">Trending Posts</h1>
+    <i class="fas fa-chevron-left prev"></i>
+    <i class="fas fa-chevron-right next"></i>
+    <div class="post-wrapper">
+
+
+     <div class="post">
+        <img src="cat.png" alt="" class="slider-image">
+        <div class="post-info">
+            <h4><a href="single.html">“sometimes things have to fall apart to make way for better things”</a></h4>
+            <i class="far fa-user"><span>nes</span></i>
+            &nbsp;
+            <i class="far fa-calendar"><span>Aug 22, 2024</span></i>
+        </div>
+     </div>
+     <div class="post">
+        <img src="dog.png" alt="" class="slider-image">
+        <div class="post-info">
+            <h4><a href="single.html">“belli bir sarhoşluk içinde yeryüzüne dayanmak daha kolay” </a></h4>
+            <i class="far fa-user"><span>nes</span></i>
+            &nbsp;
+            <i class="far fa-calendar"><span>Aug 22, 2024</span></i>
+        </div>
+     </div>
+     <div class="post">
+        <img src="bed.png" alt="" class="slider-image">
+        <div class="post-info">
+            <h4><a href="single.html">13 Sleepover Ideas That Will Never Let You Resort to Your Phone</a></h4>
+            <i class="far fa-user"><span>nes</span></i>
+            &nbsp;
+            <i class="far fa-calendar"><span>Aug 22, 2024</span></i>
+        </div>
+     </div>
+     <div class="post">
+        <img src="sexism.png" alt="" class="slider-image">
+        <div class="post-info">
+            <h4><a href="single.html">Fighting Sexism Together: Both Genders Should Be Equal</a></h4>
+            <i class="far fa-user"><span>nes</span></i>
+            &nbsp;
+            <i class="far fa-calendar"><span>Aug 22, 2024</span></i>
+        </div>
+     </div>
+     <div class="post">
+        <img src="women.png" alt="" class="slider-image">
+        <div class="post-info">
+            <h4><a href="single.html">The Trend of The Year! Some Nightdress Recommendations</a></h4>
+            <i class="far fa-user"><span>nes</span></i>
+            &nbsp;
+            <i class="far fa-calendar"><span>Aug 22, 2024</span></i>
+        </div>
+     </div>
+
+
+
+    </div>
+
+</div>
+    <!-- // Post Slider -->
+
+
+     
+    <!-- Content -->
+    <div class="content clearfix">
+    
+       <!-- Main Content -->
+       <div class="main-content">
+       <h2 class="recent-post-title">Recent Posts</h2>
+       
+       <div class="post">
+       <img src="cat.png" alt="" class="post-image">
+       <div class="post-preview">
+       <h2><a href="single.html">'sometimes things have to fall apart to make way for better things'</a></h2>
+       
+       <i class="far fa-user"><span>nes</span></i>
+       &nbsp;
+       <i class="far fa-calendar"><span>24 Aug, 2024</span></i>
+       <p class="preview-text">
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+       Exercitationem optio possimus a inventore maxime laborum.
+       </p>
+       <a href="single.html" class="btn read-more">Read More</a>
+       </div>
+       </div>
+       <div class="post">
+       <img src="dog.png" alt="" class="post-image">
+       <div class="post-preview">
+       <h2><a href="single.html">“belli bir sarhoşluk içinde yeryüzüne dayanmak daha kolay”</a></h2>
+       
+       <i class="far fa-user"><span>nes</span></i>
+       &nbsp;
+       <i class="far fa-calendar"><span>24 Aug, 2024</span></i>
+       <p class="preview-text">
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+       Exercitationem optio possimus a inventore maxime laborum.
+       </p>
+       <a href="single.html" class="btn read-more">Read More</a>
+       </div>
+       </div>
+       <div class="post">
+       <img src="bed.png" alt="" class="post-image">
+       <div class="post-preview">
+       <h2><a href="single.html">13 Sleepover Ideas That Will Never Let You Resort to Your Phone</a></h2>
+       
+       <i class="far fa-user"><span>nes</span></i>
+       &nbsp;
+       <i class="far fa-calendar"><span>24 Aug, 2024</span></i>
+       <p class="preview-text">
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+       Exercitationem optio possimus a inventore maxime laborum.
+       </p>
+       <a href="single.html" class="btn read-more">Read More</a>
+       </div>
+       </div>
+       <div class="post">
+       <img src="sexism.png" alt="" class="post-image">
+       <div class="post-preview">
+       <h2><a href="single.html">Fighting Sexism Together: Both Genders Should Be Equal</a></h2>
+       
+       <i class="far fa-user"><span>nes</span></i>
+       &nbsp;
+       <i class="far fa-calendar"><span>24 Aug, 2024</span></i>
+       <p class="preview-text">
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+       Exercitationem optio possimus a inventore maxime laborum.
+       </p>
+       <a href="single.html" class="btn read-more">Read More</a>
+       </div>
+       </div>
+       <div class="post">
+       <img src="women.png" alt="" class="post-image">
+       <div class="post-preview">
+       <h2><a href="single.html">The Trend of The Year! Some Nightdress Recommendations</a></h2>
+       
+       <i class="far fa-user"><span>nes</span></i>
+       &nbsp;
+       <i class="far fa-calendar"><span>24 Aug, 2024</span></i>
+       <p class="preview-text">
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+       Exercitationem optio possimus a inventore maxime laborum.
+       </p>
+       <a href="single.html" class="btn read-more">Read More</a>
+       </div>
+       </div>
+       
+       </div>
+       <!-- // Main Content -->
+    <div class="sidebar">
+         <div class="section search">
+           <h2 class="section-title">Search</h2>
+           <form action="index.html" method="post">
+             <input type="text" name="search-term" class="text-input" placeholder="Search...">
+           </form>
+         </div>
+         
+    <div class="section topics">
+    <h2 class="section-title">Topics</h2>
+    <ul>
+         <li><a href="#">Poems</a></li>
+         <li><a href="#">Literature</a></li>
+         <li><a href="#">Writing</a></li>
+         <li><a href="#">Quotes</a></li>
+         <li><a href="#">Fun Facts</a></li>
+         <li><a href="#">Ideas</a></li>
+         <li><a href="#">Recommendations</a></li>
+         <li><a href="#">Lifestyle</a></li>
+    </div>
+    
+    
+    
+    
+    </div>
+    </div>
+    <!-- // Content -->
+
+
+  </div>
+<!-- // Page Wrapper -->
+
+<!-- footer -->
+<div class="footer">
+    <div class="footer-content">
+          <div class="footer-section about">
+    <h1 class="logo-text"><span>Beauty in Mundane</span></h1>
+          <p>
+    Beauty in Mundane is a page where we help each other take some time away from all the exaggerations of our daily life and start seeing the hidden beauty in everyday life. 
+    Whether it's a quiet street, a blooming flower, a stunning sunset or just your favorite book, this site serves as a collective space for capturing the essence of daily beauty.
+         </p>
+                <div class"socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+          </div>
+          <div class="footer-section links">
+    <h6>Quick Links</h6>
+    <br>
+    <ul>
+      <a href="#"> 
+         <li>Events</li>
+      </a>
+      <a href="#">
+         <li>Team</li>
+      </a>
+      <a href="#">
+         <li>Donate</li>
+      </a>
+      <a href="#">
+         <li>Terms of Use</li>
+      </a>  
+      <a href="#">
+         <li>Privacy Policy</li>
+      </a>   
+      
+      
+      </ul>
+          </div>
+          <div class="footer-section contact-form">
+    <h6>Contact Us</h6>
+    <br>
+    <form action="index.html" method="post">
+      <input type="email" name="email" class="text-input contact-input" placeholder="Your email adress...">
+      <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+      <button type="submit" class="btn btn-big contact-btn">
+      <i class="fas fa-envelope"></i>
+      <span>Send</span></button>
+    </form>
+          </div>
+    </div>
+    <div class="footer-bottom">
+    &copy; beautyinmundane.com | Designed by rue
+    
+    </div>
+</div>
+
+<!-- // footer -->
+
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+ <!-- Custom Script -->
+ <script src="js/script.js"></script>
+<script>
+$(document).ready(function(){
+$('.menu-toggle').on('click', function() {
+    $('.nav').toggleClass('showing')
+    $('.nav ul').toggleClass('showing')
+});
+
+
+$('.post-wrapper').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    nextArrow: $('.next'),
+    prevArrow: $('.prev'),
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+
+
+});
+  </script>
+ </body>
+</html>
