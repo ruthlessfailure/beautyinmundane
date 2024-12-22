@@ -287,7 +287,7 @@ margin: 30px auto 30px;
 
 .content .main-content{
 width: 70%;
-float: left;
+float: left !important;
 }
 
 .content .main-content.single {
@@ -298,7 +298,11 @@ float: left;
     border-radius: 5px;
 
 }
+.content .main-content.single .post-title {
 
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 .content .main-content .post {
 width: 95%;
@@ -391,7 +395,7 @@ list-style: none;
 }
 
 .content .sidebar .section.topics ul li a {
-border-bottom: 1px solid #9DCED2;
+border-bottom: 1px solid #9DCED2 ;
 display: block;
 padding: 15px 0px 15px 0px;
 transition: all 0.3s;
